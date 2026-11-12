@@ -1,0 +1,99 @@
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+.background {
+  width: 700px;
+  height: 1000px;
+  object-fit: cover;
+  display: flex;
+  position: relative;
+  left: 250px;
+  z-index: 30;
+}
+
+.homeicons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 150px;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+
+.icon1 {
+  background-color: rgba(165, 74, 74);
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  position: relative;
+  left: 5px;
+}
+
+.pfp {
+  margin: 25px;
+  width: 350px;
+  height: 350px;
+  border-radius: 175px;
+  object-position: center;
+}
+
+.icon2 {
+  background-color: rgba(165, 74, 74);
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  position: relative;
+  left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.persona {
+  background-color: none;
+  width: 150px;
+  height: 150px;
+  border: 7px solid rgba(165, 74, 74);
+  border-radius: 75px;
+  align-content: center;
+  margin-right: 40px;
+}
+
+.skillsBox {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 23px;
+  width: 100%;
+  background: #f1e9c1;
+  margin-top: 50px;
+  clip-path: polygon(0 0, 0 100%, 79% 100%, 100% 53%, 100% 0);
+}
+
+/* Skill tag animations */
+.skill-tag {
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.skill-tag:hover {
+  background: rgba(165, 74, 74, 0.9);
+  color: white;
+  border-color: rgba(165, 74, 74, 0.9);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(165, 74, 74, 0.3);
+}
+.skillText {
+  color: black;
+  font-style: cursive;
+}
+
+/* Section animations */
+section {
+  animation: fadeIn 0.6s ease-in-out;
+}

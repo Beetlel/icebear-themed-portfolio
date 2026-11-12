@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MA HUSSEIN BOLADE</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+      }
+
+      header {
+        background: none;
+        color: white;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: "Snap ITC", sans-serif;
+        font-style: italic;
+        color: rgba(165, 74, 74, 0.9);
+      }
+
+      nav ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+      }
+
+      nav ul li:hover {
+        font-size: 30px;
+        transition: font-size 0.5s ease-in-out;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        opacity: 0.8;
+        color: rgba(165, 74, 74, 0.9);
+      }
+
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      p {
+        font-family: cursive;
+        font-size: large;
+        font-weight: bold;
+        color: white;
+      }
+
+      .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f1e9c1;
+        margin: 0px;
+        width: 100%;
+        height: 500px;
+        clip-path: polygon(0 8%, 99% 3%, 100% 100%, 0% 100%);
+        border-radius: 15px;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+      }
+
+      .hobbyCard {
+        background: black;
+        border-radius: 25px;
+        border-top: 10px solid rgba(165, 74, 74, 0.9);
+        border-bottom: 10px solid rgba(165, 74, 74, 0.9);
+        padding: 1.5rem;
+        clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+        width: 33%;
+      }
+
+      .hobbyCard:hover {
+        transform: translateY(-10px);
+        transition: transform 0.3s;
+      }
+      .hobbyCardButton {
+        padding: 15px 10px;
+        background: rgba(165, 74, 74, 0.9);
+        color: white;
+        border-radius: 5px;
+        margin-top: 12px;
+        cursor: pointer;
+        font-size: 1rem;
+        border: none;
+        width: 100%;
+        text-align: center;
+      }
+      .hobbyCardButton:hover {
+        background: #764ba2;
+        transition: background 0.3s;
+      }
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .skill-tag {
+        background: #f0f0f0;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 22px;
+        margin-top: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="portfolioPage"
+      style="background: black; display: flex; flex-direction: column"
+    >
+      <!-- Header Navigation -->
+      <header>
+        <nav>
+          <div class="logo">BEE</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#Hobbies">Hobbies</a></li>
+            <li><a href="#skills">Skill Sets</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="home" style="padding-top: 0px">
+        <div
+          style="
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+          "
+        >
+          <img class="background" src="black.jpeg" alt="Your Image" />
+          <div class="homeicons">
+            <div class="icon1">
+              <img class="pfp" src="pfp4.jpg" alt="My pfp" />
+            </div>
+            <div class="icon2">
+              <p>MA HUSSEIN BOLADE</p>
+            </div>
+            <div style="display: flex; margin-top: 40px">
+              <div class="persona"><p>INTP</p></div>
+              <div class="persona"><p>JACK OF ALL TRADE</p></div>
+              <div class="persona"><p>21</p></div>
+            </div>
+            <video
+              class="background-video"
+              autoplay
+              loop
+              style="
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                margin-top: 20px;
+                opacity: 0.9;
+              "
+            >
+              <source src="bee.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" style="display: flex; justify-content: center">
+        <div class="aboutMe">
+          <div style="text-align: center; margin-top: 80px">
+            <p style="color: black; margin-right: 10px">
+              I'm a dedicated developer with 2+ years of experience in building
+              responsive websites and web applications. I specialize in frontend
+              and backend technologies and have a strong passion for creating
+              creative user-friendly interfaces that solve real-world problems.
+            </p>
+            <p style="margin-top: 10px; color: black">
+              My journey in web development started with a curiosity about how
+              websites work, and has gradually evolved into a career path .
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              gap: 90px;
+              text-align: center;
+              margin-top: 20px;
+              position: relative;
+            "
+          >
+            <ul style="list-style-position: inside; line-height: 2">
+              <h3>What I Can Do</h3>
+              <li>Design responsive websites</li>
+              <li>Develop interactive web applications</li>
+              <li>Create engaging user experiences</li>
+              <li>Implement modern web standards</li>
+            </ul>
+
+            <img
+              src="bee.JPG"
+              alt="My pfp"
+              style="width: 150px; border-radius: 50%"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Hobbies Section -->
+      <section id="Hobbies">
+        <p
+          style="
+            margin-top: 50px;
+            color: rgba(165, 74, 74, 0.9);
+            font-size: 30px;
+            font-weight: bold;
+          "
+        >
+          MY HOBBIES
+        </p>
+
+        <div class="flex">
+          <div class="hobbyCard">
+            <img
+              src="bee2.JPG"
+              alt="Hobby 1"
+              style="width: 100%; height: 250px; object-fit: cover"
+            />
+            <p>COOKING. loves to Cook and Bake</p>
+            <button class="hobbyCardButton">
+              <p>love It!!!💖</p>
+            </button>
+          </div>
+
+          <div class="hobbyCard">
+            <img
+              src="bee3.JPG"
+              alt="Hobby 2"
+              style="width: 100%; height: 250px; object-fit: cover"
+            />
+            <p>Eating. loves IceCream🍦</p>
+            <button class="hobbyCardButton">
+              <p>love It!!!💖</p>
+            </button>
+          </div>
+
+          <div class="hobbyCard">
+            <img
+              src="bee4.JPG"
+              alt="Hobby 3"
+              style="width: 100%; height: 250px; object-fit: cover"
+            />
+            <p>Reading. loves to Read and Research📚</p>
+            <button class="hobbyCardButton">
+              <p>love It!!!💖</p>
+            </button>
+          </div>
+          <div class="hobbyCard">
+            <img
+              src="bee5.PNG"
+              alt="Hobby 3"
+              style="width: 100%; height: 250px; object-fit: cover"
+            />
+            <p>Coding. loves to Code and Design</p>
+            <button class="hobbyCardButton">
+              <p>love It!!!💖</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" style="margin-right: 22px; margin-left: 22px">
+        <div class="skillsBox">
+          <h2>Coding Skills</h2>
+          <h3 style="margin-top: 20px; margin-bottom: 10px">
+            Frontend Development
+          </h3>
+          <div class="skills-list" style="margin-bottom: 22px">
+            <div class="skill-tag"><p class="skillText">HTML5</p></div>
+            <div class="skill-tag"><p class="skillText">CSS3</p></div>
+            <div class="skill-tag"><p class="skillText">JavaScript</p></div>
+            <div class="skill-tag"><p class="skillText">React-vite</p></div>
+            <div class="skill-tag"><p class="skillText">Tailwind CSS</p></div>
+            <div class="skill-tag">
+              <p class="skillText">React Native & NativeWind</p>
+            </div>
+          </div>
+
+          <h3 style="margin-top: 20px; margin-bottom: 10px">
+            Backend Development
+          </h3>
+          <div class="skills-list" style="margin-bottom: 23px">
+            <div class="skill-tag"><p class="skillText">Node.js</p></div>
+            <div class="skill-tag"><p class="skillText">Express</p></div>
+            <div class="skill-tag"><p class="skillText">Python</p></div>
+            <div class="skill-tag"><p class="skillText">MongoDB</p></div>
+            <div class="skill-tag"><p class="skillText">React Query</p></div>
+            <div class="skill-tag"><p class="skillText">REST APIs</p></div>
+          </div>
+
+          <h3 style="margin-top: 20px; margin-bottom: 10px">
+            Tools & Platforms
+          </h3>
+          <div class="skills-list">
+            <div class="skill-tag"><p class="skillText">Git</p></div>
+            <div class="skill-tag"><p class="skillText">GitHub</p></div>
+            <div class="skill-tag"><p class="skillText">VS Code</p></div>
+            <div class="skill-tag"><p class="skillText">HeroIcon</p></div>
+            <div class="skill-tag"><p class="skillText">Cloudinary</p></div>
+            <div class="skill-tag"><p class="skillText">AWS</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div style="text-align: center; margin-top: 2rem">
+          <p style="margin-bottom: 1rem">Connect with me on:</p>
+          <div style="display: flex; justify-content: center; gap: 1rem">
+            <a
+              href="#"
+              style="
+                color: rgba(165, 74, 74, 0.9);
+                text-decoration: none;
+                font-weight: bold;
+              "
+              >LinkedIn</a
+            >
+            <a
+              href="#"
+              style="
+                color: rgba(165, 74, 74, 0.9);
+                text-decoration: none;
+                font-weight: bold;
+              "
+              >GitHub</a
+            >
+            <a
+              href="#"
+              style="
+                color: rgba(165, 74, 74, 0.9);
+                text-decoration: none;
+                font-weight: bold;
+              "
+              >Twitter</a
+            >
+          </div>
+          <img
+            src="bee7.JPG"
+            alt="My pfp"
+            style="width: 150px; border-radius: 50%; margin-left: 20px"
+          />
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          &copy; 2026 MA HUSSEIN BOLADE. All rights reserved else you'll be
+          arrested for Copyright Infringement.
+        </p>
+        <p style="margin-top: 5px; font-size: 10px">
+          Built with the ❤ of Coding, and HTML and CSS ofcourse!
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
